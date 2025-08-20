@@ -1,126 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Medical Exam Preparation Portal</title>
-    <!-- Tailwind CSS for styling -->
+    <title>Préparation aux QCM Médicaux</title>
+    <!-- Tailwind CSS for professional styling -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <!-- Google Fonts: Inter -->
+    <!-- Google Fonts: Inter for a clean, modern look -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Use the Inter font family defined in the <link> tag */
+        /* Custom styles to use the Inter font */
         body {
             font-family: 'Inter', sans-serif;
         }
-        /* Simple animation for cards on hover */
-        .card-hover:hover {
+        /* Style for the card hover effect */
+        .test-card:hover {
             transform: translateY(-5px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
 
-    <!-- Header Section -->
-    <header class="bg-white shadow-sm">
-        <div class="container mx-auto px-6 py-4">
-            <h1 class="text-3xl font-bold text-gray-900">Medical Exam Preparation</h1>
-            <p class="text-gray-600 mt-1">Your central portal for MCQ practice tests.</p>
-        </div>
-    </header>
+    <!-- Main Container -->
+    <div class="container mx-auto px-4 py-8 md:py-16">
 
-    <!-- Main Content Section -->
-    <main class="container mx-auto px-6 py-12">
-        <h2 class="text-2xl font-semibold text-gray-800 mb-6">Available Modules</h2>
-        
-        <!-- Grid container for the test modules -->
-        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
+        <!-- Header Section -->
+        <header class="text-center mb-12">
+            <h1 class="text-4xl md:text-5xl font-bold text-gray-900 mb-2">Préparation aux QCM Médicaux</h1>
+            <p class="text-lg text-gray-600">Sélectionnez un module pour commencer votre entraînement.</p>
+        </header>
 
-            <!-- Module 1: Pathologie Chirurgicale -->
-            <div class="card-hover bg-white rounded-lg shadow-md p-6 transition-all duration-300">
-                <div class="flex items-center">
-                    <div class="bg-blue-100 text-blue-600 p-3 rounded-full">
-                        <!-- SVG Icon for Surgery -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11a7 7 0 01-7 7m0 0a7 7 0 01-7-7m7 7v4m0 0H8m4 0h4m-4-8a3 3 0 01-3-3V5a3 3 0 116 0v6a3 3 0 01-3 3z" /></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 ml-4">Pathologie Chirurgicale</h3>
-                </div>
-                <p class="text-gray-600 mt-4">A comprehensive test covering <strong>462 questions</strong> on surgical pathology.</p>
-                <div class="mt-6">
-                    <!-- This link will open the corresponding HTML file -->
-                    <a href="patho.html" class="inline-block bg-blue-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-blue-700 transition-colors">
-                        Start Test
-                    </a>
-                </div>
+        <!-- Grid for Test Modules -->
+        <main class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-4xl mx-auto">
+
+            <!-- Test Card 1: Pathologie Chirurgicale -->
+            <div class="test-card bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-all duration-300">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Pathologie Chirurgicale</h2>
+                <p class="text-gray-500 mb-4">462 Questions</p>
+                <a href="./1. path chirg  462Q Tested Ex 2025.HTML" class="inline-block w-full text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                    Commencer le Test
+                </a>
             </div>
 
-            <!-- Module 2: Pharmacologie -->
-            <div class="card-hover bg-white rounded-lg shadow-md p-6 transition-all duration-300">
-                <div class="flex items-center">
-                    <div class="bg-green-100 text-green-600 p-3 rounded-full">
-                        <!-- SVG Icon for Pharmacology -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z" /></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 ml-4">Pharmacologie</h3>
-                </div>
-                <p class="text-gray-600 mt-4">Test your knowledge with <strong>396 questions</strong> in pharmacology.</p>
-                <div class="mt-6">
-                    <!-- This link will open the corresponding HTML file -->
-                    <a href="pharmaco.html" class="inline-block bg-green-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-green-700 transition-colors">
-                        Start Test
-                    </a>
-                </div>
+            <!-- Test Card 2: Pharmacologie -->
+            <div class="test-card bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-all duration-300">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Pharmacologie</h2>
+                <p class="text-gray-500 mb-4">396 Questions</p>
+                <a href="./2. pharmaco 396Q Tested Ex  2025.HTML" class="inline-block w-full text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                    Commencer le Test
+                </a>
             </div>
 
-            <!-- Module 3: Gynécologie -->
-            <div class="card-hover bg-white rounded-lg shadow-md p-6 transition-all duration-300">
-                <div class="flex items-center">
-                    <div class="bg-pink-100 text-pink-600 p-3 rounded-full">
-                        <!-- SVG Icon for Gynecology -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" /></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 ml-4">Gynécologie</h3>
-                </div>
-                <p class="text-gray-600 mt-4">This module contains <strong>287 questions</strong> focused on gynecology.</p>
-                <div class="mt-6">
-                    <!-- This link will open the corresponding HTML file -->
-                    <a href="gyneco.html" class="inline-block bg-pink-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-pink-700 transition-colors">
-                        Start Test
-                    </a>
-                </div>
+            <!-- Test Card 3: Gynécologie -->
+            <div class="test-card bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-all duration-300">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Gynécologie</h2>
+                <p class="text-gray-500 mb-4">287 Questions</p>
+                <a href="./3. gynéco  287Q  Tested Ex 2025.HTML" class="inline-block w-full text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                    Commencer le Test
+                </a>
             </div>
 
-            <!-- Module 4: Déontologie -->
-            <div class="card-hover bg-white rounded-lg shadow-md p-6 transition-all duration-300">
-                <div class="flex items-center">
-                    <div class="bg-purple-100 text-purple-600 p-3 rounded-full">
-                        <!-- SVG Icon for Deontology/Ethics -->
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
-                    </div>
-                    <h3 class="text-xl font-semibold text-gray-900 ml-4">Déontologie</h3>
-                </div>
-                <p class="text-gray-600 mt-4">Explore medical ethics with this test of <strong>73 questions</strong>.</p>
-                <div class="mt-6">
-                    <!-- This link will open the corresponding HTML file -->
-                    <a href="deonto.html" class="inline-block bg-purple-600 text-white font-semibold py-2 px-4 rounded-lg hover:bg-purple-700 transition-colors">
-                        Start Test
-                    </a>
-                </div>
+            <!-- Test Card 4: Déontologie -->
+            <div class="test-card bg-white p-6 rounded-lg shadow-md border border-gray-200 transition-all duration-300">
+                <h2 class="text-2xl font-semibold text-gray-800 mb-2">Déontologie</h2>
+                <p class="text-gray-500 mb-4">73 Questions</p>
+                <a href="./4. Déonto 73 Q Tested Ex 2025.HTML" class="inline-block w-full text-center bg-blue-600 text-white font-semibold py-3 px-6 rounded-lg hover:bg-blue-700 transition-colors duration-300">
+                    Commencer le Test
+                </a>
             </div>
 
-        </div>
-    </main>
+        </main>
 
-    <!-- Footer Section -->
-    <footer class="bg-white mt-12">
-        <div class="container mx-auto px-6 py-4 text-center text-gray-500">
-            <p>&copy; 2025 Your Name or Organization. All Rights Reserved.</p>
-            <p class="text-sm mt-1">Powered by GitHub Pages</p>
-        </div>
-    </footer>
+        <!-- Footer Section -->
+        <footer class="text-center mt-16 text-gray-500">
+            <p>&copy; 2025 Préparation aux QCM. Tous droits réservés.</p>
+        </footer>
+
+    </div>
 
 </body>
 </html>
